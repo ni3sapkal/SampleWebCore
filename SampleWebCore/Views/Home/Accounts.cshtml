@@ -1,0 +1,47 @@
+﻿@model SampleWebCore.Models.Accounts
+@{
+    ViewData["Title"] = "Accounts";
+    int rowCount = 0;
+}
+
+<h2 class="mt-2">Accounts</h2>
+<br />
+<h4>Total Accounts: @Model.totalSize</h4>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var account in Model.records)
+                {
+                    rowCount++;
+                    <tr>
+                        <td>
+                            @rowCount
+                        </td>
+                        <td>
+                            @account.Id
+                        </td>
+                        <td>
+                            @account.Name
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
