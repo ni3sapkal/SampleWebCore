@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1800
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWebCore", "SampleWebCore\SampleWebCore.csproj", "{1D2BBE98-5479-4FAC-8472-8A312A96122F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleWebCore", "SampleWebCore\SampleWebCore.csproj", "{1D2BBE98-5479-4FAC-8472-8A312A96122F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".circleci", ".circleci", "{3A1E6F33-AC57-4E1F-B7BC-926285BAECEC}"
+	ProjectSection(SolutionItems) = preProject
+		SampleWebCore\.circleci\config.yml = SampleWebCore\.circleci\config.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
